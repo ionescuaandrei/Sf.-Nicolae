@@ -9,20 +9,22 @@
 
 body{
   background-color:#F7F7F7;
+  /* width: 70%; 
+  margin-left: auto;
+  margin-right: auto; */
+}
+
+header{
+  margin-bottom: 20px;
   width: 70%; /* Adjust the value as per your preference */
   margin-left: auto;
   margin-right: auto;
 }
 
-header{
-  margin-bottom: 20px;
-  /* margin-left: 15%;
-  margin-right: 15%; */
-}
-
 .navbar-full{
-  /* margin-left: 15%;
-  margin-right: 15%; */
+  width: 70%; /* Adjust the value as per your preference */
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 20px;
 }
 .navbar{
@@ -82,6 +84,9 @@ header{
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
+  width: 70%; /* Adjust the value as per your preference */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main-img img{
@@ -91,6 +96,9 @@ header{
 
 .info{
   margin-bottom: 20px;
+  width: 70%; /* Adjust the value as per your preference */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .info h1{
@@ -150,7 +158,7 @@ header{
 
 .linie{
   display: block; 
-  max-width: 100%;
+  width: 100%;
 }
 
 .contact{
@@ -234,5 +242,8 @@ header{
   }
   .fonduri{
     text-align: center;
+  }
+  .contact{
+    font-size: 15px;
   }
 }
