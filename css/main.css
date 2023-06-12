@@ -10,11 +10,12 @@
 body{
   background-color:#F7F7F7;
   height: 100%;
-  margin: auto 300px;
 }
 
 header{
   margin-bottom: 20px;
+  margin-left: 300px;
+  margin-right: 300px;
 }
 
 .navbar{
@@ -22,6 +23,8 @@ header{
   align-items: center;
   justify-content: space-between;
   list-style: none;
+  margin-left: 300px;
+  margin-right: 300px;
   margin-bottom: 20px;
 }
 
@@ -67,9 +70,100 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-bottom: 20px;
 }
 
 .main-img img{
   border-radius: 20px;
+  width: 90%;
+}
+
+.info{
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-bottom: 20px;
+}
+
+.info h1{
+  font-size: 35px;
+  text-align: center;
+  color: #21409a;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.info h3{
+  margin-bottom: 5px;
+}
+
+.info p{
+  font-size: 17.5px;
+  text-align: justify;
+}
+
+.down-info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.fonduri{
+  font-size: 17.5px;
+  color: #21409a;
+  border-top: 1px solid #21409a;
+  border-bottom: 1px solid #21409a;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.fonduri a{
+  text-decoration: none;
+}
+
+.fonduri a:hover{
+  text-decoration: underline;
+}
+
+.investim{
+  font-size: 17.5px;
+  text-align: center;
+  color: #21409a;
+  margin-bottom: 10px;
+}
+
+.continut{
+  font-size: 14px;
+  text-align: center;
+  color: #21409a;
+  margin-bottom: 10px;
+}
+
+.linie{
   width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 !important;
+}
+
+.contact{
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #21409a;
+}
+
+.contact a{
+  text-decoration: none;
+  color: #21409a;
+}
+
+.contact a:hover{
+  text-decoration: underline;
+  color: #21409a;
 }
