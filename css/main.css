@@ -9,25 +9,28 @@
 
 body{
   background-color:#F7F7F7;
-  height: 100%;
+  width: 70%; /* Adjust the value as per your preference */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 header{
   margin-bottom: 20px;
-  margin-left: 300px;
-  margin-right: 300px;
+  /* margin-left: 15%;
+  margin-right: 15%; */
 }
 
+.navbar-full{
+  /* margin-left: 15%;
+  margin-right: 15%; */
+  margin-bottom: 20px;
+}
 .navbar{
   display: flex;
   align-items: center;
   justify-content: space-between;
   list-style: none;
-  margin-left: 300px;
-  margin-right: 300px;
-  margin-bottom: 20px;
 }
-
 
 .navbar li a{
   position: relative;
@@ -66,23 +69,27 @@ header{
   text-decoration-thickness: 1.5px;
 }
 
+.toggle-button{
+  color: #21409a;
+  font-size: 2rem;
+  cursor: pointer;
+  text-align: right;
+  display: none;
+}
+
 .main-img{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 300px;
-  margin-right: 300px;
   margin-bottom: 20px;
 }
 
 .main-img img{
   border-radius: 20px;
-  width: 90%;
+  width: 80%;
 }
 
 .info{
-  margin-left: 300px;
-  margin-right: 300px;
   margin-bottom: 20px;
 }
 
@@ -142,12 +149,8 @@ header{
 }
 
 .linie{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 !important;
+  display: block; 
+  max-width: 100%;
 }
 
 .contact{
@@ -166,4 +169,70 @@ header{
 .contact a:hover{
   text-decoration: underline;
   color: #21409a;
+}
+
+
+/* Dropdown */
+
+.dropdown{
+  display: none;
+  position: absolute;
+  right: 2rem;
+  height: 0;
+  top: 80px;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown .open{
+  height: 240px;
+}
+
+.dropdown li{
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Responsive */
+
+@media (max-width:992px){
+  .navbar{
+    display: none;
+  }
+  .toggle-button{
+    display: block;
+  }
+  .dropdown{
+    display: block;
+  }
+  .main-img img{
+    margin: 0;
+    width: 300px;
+  }
+  .info h1{
+    font-size: 20px;
+    text-align: center;
+  }
+  .info p{
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .info h3{
+    text-align: center;
+  }
+  
+  header img{
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .fonduri{
+    text-align: center;
+  }
 }

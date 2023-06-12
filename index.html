@@ -5,13 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/main.css">
+  <script src="/js/main.js"></script>
   <title>Acasă</title>
 </head>
 <body>
   <header>
     <img src="/img/header-logos.svg" alt="logo-header">
   </header>
-  <nav>
+  <nav class="navbar-full">
     <ul class="navbar">
       <li><a href="/index.html" class="active">Acasă</a></li>
       <li><a href="/frontend/istoricalobiectivului.html">Istoric al obiectivului</a></li>
@@ -21,6 +22,19 @@
       <li><a href="/frontend/newsfeed.html">Newsfeed</a></li>
       <li><a href="/frontend/comunicari.html">Comunicări</a></li>
     </ul>
+    <div class="toggle-button">
+    <ion-icon name="menu-outline" class="icon"></ion-icon>
+    </div>
+
+    <div class="dropdown">
+      <li><a href="/index.html" class="active">Acasă</a></li>
+      <li><a href="/frontend/istoricalobiectivului.html">Istoric al obiectivului</a></li>
+      <li><a href="/frontend/localizareghidaj.html">Localizare şi ghidaj</a></li>
+      <li><a href="/frontend/programcotact.html">Program de date de contact</a></li>
+      <li><a href="/frontend/campinteractiuni.html">Câmp de interacţiuni</a></li>
+      <li><a href="/frontend/newsfeed.html">Newsfeed</a></li>
+      <li><a href="/frontend/comunicari.html">Comunicări</a></li> 
+    </div>
   </nav>
 
   <main>
@@ -45,5 +59,7 @@
       <img src="/img/linie.svg" alt="linie" class="linie">
       <h4 class="contact"><a href="www.inforegio.ro">www.inforegio.ro</a>︱<a href="facebook.com/inforegio.ro">facebook.com/inforegio.ro</a></h4>
     </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
