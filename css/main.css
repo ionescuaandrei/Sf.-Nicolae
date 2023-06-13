@@ -73,7 +73,7 @@ header{
 
 .toggle-button{
   color: #21409a;
-  font-size: 2rem;
+  font-size: 1.5rem;
   cursor: pointer;
   text-align: right;
   display: none;
@@ -136,6 +136,7 @@ header{
 
 .fonduri a{
   text-decoration: none;
+  color: #0b44f0;
 }
 
 .fonduri a:hover{
@@ -185,19 +186,32 @@ header{
 .dropdown{
   display: none;
   position: absolute;
-  right: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
   height: 0;
-  top: 80px;
+  top: 90px;
   width: 300px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(15px);
+  background: #21409a;
   border-radius: 10px;
   overflow: hidden;
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.dropdown .open{
-  height: 240px;
+.dropdown li a{
+  color: #F7F7F7;
+  text-decoration: none;
+}
+
+.dropdown li a:hover{
+  color: #F7F7F7;
+  text-decoration: underline;
+}
+
+.dropdown .active-phone{
+  text-decoration: underline;
+}
+.dropdown.open{
+  height: 250px;
 }
 
 .dropdown li{
@@ -205,6 +219,62 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+/* Responsive 1500px */
+@media (max-width:1500px){
+
+  .navbar li a{
+    font-size: 15px;
+  }
+
+  header{
+    margin-bottom: 20px;
+    width: 80%; /* Adjust the value as per your preference */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .navbar-full{
+    width: 80%; /* Adjust the value as per your preference */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  .main-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 80%; /* Adjust the value as per your preference */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .navbar .active{
+    text-decoration: underline;
+    width: 100%;
+    color: #21409a;
+    pointer-events: none;
+    text-decoration-thickness: 1px;
+  }
+  .info h1{
+    font-size: 30px;
+    text-align: center;
+    color: #21409a;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .info h3{
+    margin-bottom: 5px;
+    font-size: 17px;
+  }
+  
+  .info p{
+    font-size: 15px;
+    text-align: justify;
+  }
 }
 /* Responsive */
 
@@ -217,10 +287,27 @@ header{
   }
   .dropdown{
     display: block;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 0;
+      top: 90px;
+      width: 300px;
+      background: #21409a;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
+  
   .main-img img{
     margin: 0;
-    width: 300px;
+    width: 100%;
+  }
+  .info{
+    margin-bottom: 20px;
+    width: 90%; /* Adjust the value as per your preference */
+    margin-left: auto;
+    margin-right: auto;
   }
   .info h1{
     font-size: 20px;
@@ -228,7 +315,7 @@ header{
   }
   .info p{
     font-size: 15px;
-    text-align: center;
+    text-align: justify;
   }
 
   .info h3{
@@ -240,8 +327,16 @@ header{
     display: block;
     margin: auto;
   }
-  .fonduri{
+  .fonduri,
+  .investim{
     text-align: center;
+    font-size: 14px;
+  }
+
+  .continut{
+    text-align: center;
+    font-size: 10px;
+    padding: 5px;
   }
   .contact{
     font-size: 15px;

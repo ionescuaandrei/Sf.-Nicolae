@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/css/main.css">
+  <title>Acasă</title>
+</head>
+<body>
+  <header>
+    <img src="/img/header-logos.svg" alt="logo-header">
+  </header>
+  <nav class="navbar-full">
+    <ul class="navbar">
+      <li><a href="/index.html">Acasă</a></li>
+      <li><a href="/frontend/istoricalobiectivului.html">Istoric al obiectivului</a></li>
+      <li><a href="/frontend/localizareghidaj.html">Localizare şi ghidaj</a></li>
+      <li><a href="/frontend/programcotact.html" class="active">Program de date de contact</a></li>
+      <li><a href="/frontend/campinteractiuni.html">Câmp de interacţiuni</a></li>
+      <li><a href="/frontend/newsfeed.html">Newsfeed</a></li>
+      <li><a href="/frontend/comunicari.html">Comunicări</a></li>
+    </ul>
+    <div class="toggle-button">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <div class="dropdown">
+      <li><a href="/index.html">Acasă</a></li>
+      <li><a href="/frontend/istoricalobiectivului.html">Istoric al obiectivului</a></li>
+      <li><a href="/frontend/localizareghidaj.html">Localizare şi ghidaj</a></li>
+      <li><a href="/frontend/programcotact.html"  class="active-phone">Program de date de contact</a></li>
+      <li><a href="/frontend/campinteractiuni.html">Câmp de interacţiuni</a></li>
+      <li><a href="/frontend/newsfeed.html">Newsfeed</a></li>
+      <li><a href="/frontend/comunicari.html">Comunicări</a></li> 
+    </div>
+  </nav>
+
+  <main>
+    <div class="main-img">
+    <img src="/img/two-boys-brothers-running-autumn-park.jpg" alt="centrul-de-servicii-sociale-sfantul-nicolae">
+    </div>
+
+    <div class="info">
+      <h1>Porgram de date de contact</h1>
+      <h3>Lorem, ipsum.</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, delectus officiis repudiandae, id similique molestias esse harum autem nihil impedit, commodi asperiores quidem ut. Distinctio quidem esse enim! Unde id iure nihil ducimus saepe quia illo pariatur vero error labore vel, temporibus voluptatem quaerat quos! Et minima explicabo accusamus ut inventore adipisci blanditiis quis voluptas. Pariatur nostrum aliquid, iure quibusdam quisquam voluptate iusto laudantium in ab dolorem. Officia eaque dolore, laboriosam tempora, labore laborum eligendi deleniti cumque debitis ad, culpa quia facere eveniet! Voluptatum, labore aliquid dolorum culpa nulla velit. Sit nobis veniam ab perspiciatis architecto voluptate exercitationem est totam inventore provident harum illum eligendi perferendis nisi dignissimos fugit corporis dicta, cupiditate qui mollitia, ratione quibusdam incidunt! Et id expedita corrupti dolorem dignissimos aliquam culpa esse ea, alias temporibus laboriosam nam dolorum cum quod iste delectus quae, dolore pariatur nostrum libero in sit omnis quam! Quae quis accusamus veniam assumenda sunt, voluptate modi! Fuga facere assumenda deserunt asperiores doloremque culpa possimus, odio id. Laboriosam tenetur minima expedita aliquid inventore impedit corrupti maiores, recusandae magni temporibus consectetur illo autem quia? Aut voluptatem nobis error at ducimus suscipit cupiditate quo nostrum possimus obcaecati consequuntur, non debitis magnam, tenetur veniam quasi deserunt. Totam rerum hic dolore ratione suscipit, quam neque, voluptatibus cum magni nulla quasi! Voluptates quibusdam doloremque, accusamus quaerat molestiae ad esse doloribus ea nam dolore. Aut debitis ratione officia minima non deserunt quos rerum? Dolorum excepturi quasi dolore repellendus nobis porro, officiis esse, magni cumque obcaecati aliquid sed voluptatibus praesentium. Accusantium aperiam, maxime ducimus voluptates recusandae eos aspernatur sequi doloribus vel quam labore assumenda distinctio voluptate dolores facilis nam quod hic rem cupiditate commodi perferendis cum quo fuga eius! Magnam, ratione fugiat officia, esse quis repudiandae molestiae nemo ipsam ea ducimus consequatur voluptatum pariatur sequi corrupti voluptatibus eveniet minima atque suscipit!</p>
+    </div>
+  </main>
+    <footer>
+      <div class="down-info">
+        <div class="fonduri">
+        <p>Pentru informații detaliate despre celelate programe cofinanțate <br> de Uniunea Europeană, vă invităm să vizitați <a href="https://www.fonduri-ue.ro/">www.fonduri-ue.ro</a></p>
+        </div>
+        <p class="investim">Investim în viitorul tău! <br> Proiect confinațat din Fondul European de Dezvoltare Regională prin Programul<br>Operațional Regional 2014-2020</p>
+        <p class="continut">Conținutul acestui material nu reprezintă în mod obligatoriu poziția oficială a Uniunii Europene sau a Guvernului României</p>
+      </div>
+      <img src="/img/linie.svg" alt="linie" class="linie">
+      <h4 class="contact"><a href="https://www.inforegio.ro/ro/">www.inforegio.ro</a>︱<a href="https://www.facebook.com/inforegio.ro/">facebook.com/inforegio.ro</a></h4>
+    </footer>
+    <script>
+      const toggleBtn = document.querySelector('.toggle-button');
+      const toggleBtnIcon = document.querySelector('.toggle-button i');
+      const dropDown = document.querySelector('.dropdown');
+
+      toggleBtn.onclick = function () {
+      dropDown.classList.toggle('open');
+      };
+    </script>
+</body>
+</html>
