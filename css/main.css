@@ -16,13 +16,13 @@ body{
 
 header{
   margin-bottom: 20px;
-  width: 70%; /* Adjust the value as per your preference */
+  width: 1200px; 
   margin-left: auto;
   margin-right: auto;
 }
 
 .navbar-full{
-  width: 70%; /* Adjust the value as per your preference */
+  width: 1200px; 
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
@@ -84,7 +84,7 @@ header{
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
-  width: 70%; /* Adjust the value as per your preference */
+  width: 1200px; /* Adjust the value as per your preference */
   margin-left: auto;
   margin-right: auto;
 }
@@ -96,7 +96,7 @@ header{
 
 .info{
   margin-bottom: 20px;
-  width: 70%; /* Adjust the value as per your preference */
+  width: 1200px; /* Adjust the value as per your preference */
   margin-left: auto;
   margin-right: auto;
 }
@@ -119,6 +119,7 @@ header{
 }
 
 .down-info{
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -157,8 +158,13 @@ header{
   margin-bottom: 10px;
 }
 
+.linie-relative{
+  display: flex;
+  align-items:center ;
+  justify-content: center;
+}
+
 .linie{
-  display: block; 
   width: 100%;
 }
 
