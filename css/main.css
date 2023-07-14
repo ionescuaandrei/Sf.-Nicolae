@@ -23,11 +23,11 @@ header{
 }
 
 .logo-img{
-  width: 150px;
+  width: 120px;
 }
 
 .logo-img-regio{
-  width: 250px;
+  width: 220px;
 }
 
 .navbar-full{
@@ -93,8 +93,7 @@ header{
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
-  width: 1001px;
-  height: 563px;
+  width: 520px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 20px;
@@ -123,11 +122,12 @@ header{
 }
 
 .info h3{
+  font-size: 19px;
   margin-bottom: 5px;
 }
 
 .info p{
-  font-size: 17.5px;
+  font-size: 15px;
   text-align: justify;
 }
 
@@ -165,10 +165,11 @@ header{
 }
 
 .continut{
+  position: relative;
   font-size: 14px;
   text-align: center;
   color: #213f99;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .linie-relative{
@@ -183,23 +184,11 @@ header{
 
 .contact{
   position: relative;
-  margin-top: 10px;
+  /* margin-top: 5px; */
   text-align: center;
-  margin-bottom: 20px;
   font-size: 18px;
   color: #213f99;
-  padding: 10px;
-}
-
-.contact::after{
-  content: '';
-  position: absolute;
-  width: 50%;
-  height: 1px;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 0;
-  background-color: #213f99;
+  padding: 5px;
 }
 
 .contact a{
@@ -213,6 +202,7 @@ header{
 }
 
 .copyright{
+  position: relative;
   font-size: 17px;
   text-transform: uppercase;
   font-style: italic;
@@ -237,6 +227,8 @@ header{
   justify-content: center;
   margin-top: 5px;
 }
+
+
 
 .maps iframe{
   width: 1200px;
@@ -325,7 +317,6 @@ header{
     justify-content: center;
     margin-bottom: 20px;
     width: 70%;
-    height: 70%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -377,7 +368,7 @@ header{
       left: 50%;
       transform: translateX(-50%);
       height: 0;
-      top: 90px;
+      top: 152px;
       width: 300px;
       background: #213f99;
       border-radius: 10px;
@@ -385,9 +376,8 @@ header{
       transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
   
-  .main-img img{
-    margin: 0;
-    width: 100%;
+  .main-img{
+    width: 80%;
   }
   .title{
     margin-bottom: 20px;
@@ -423,6 +413,10 @@ header{
   .investim{
     text-align: center;
     font-size: 14px;
+  }
+
+  .investim{
+    padding: 5px;
   }
 
   .continut{
