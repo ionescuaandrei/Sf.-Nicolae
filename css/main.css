@@ -339,7 +339,7 @@ header{
 .slider img {
   flex: 1 0 auto;
   width:500px;
-  scroll-snap-align: right;
+  scroll-snap-align: start;
   object-fit: cover;
 }
 
