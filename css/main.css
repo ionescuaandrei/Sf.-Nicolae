@@ -225,14 +225,16 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 5px;
+  margin-bottom:20px;
 }
 
 
 
 .maps iframe{
-  width: 1200px;
-  height: 300px;
+  height:666px;
+  width:500px;
+  border-radius:0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 /* Dropdown */
@@ -292,36 +294,57 @@ header{
   text-align: center;
 }
 
+.flex-map-img{
+  position: relative;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-bottom: 1px solid #000;
+}
+.flex-map-img:last-child{
+  position: relative;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-bottom: 0px solid #000;
+}
+
+.text-align{
+  margin-top: 10px;
+  text-align:center !important;
+}
+
 /* SLIDER */
 
-.container{
-  padding:2rem;
+.container {
+  padding: 2rem;
+  padding-top: 0.3rem;
 }
 
-.slider-wrapper{
+.slider-wrapper {
   position: relative;
-  max-width:48rem;
-  margin:0 auto;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
-.slider{
-  display:flex;
-  aspect-ratio: 9/16;
+.slider {
+  display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  border-radius:0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.slider img{
-  flex: 1 0 100%;
+.slider img {
+  flex: 1 0 auto;
+  width:500px;
   scroll-snap-align: right;
-  object-fit:cover;
-
+  object-fit: cover;
 }
 
-.nav-slider{
-  display:flex;
+.nav-slider {
+  display: flex;
   column-gap: 1rem;
   position: absolute;
   bottom: 1.25rem;
@@ -330,18 +353,19 @@ header{
   z-index: 1;
 }
 
-.nav-slider a{
+.nav-slider a {
   width: 0.5rem;
   height: 0.5rem;
-  border-radius:50%;
-  background-color:#fff;
-  opacity:0.75;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.75;
   transition: opacity ease 250ms;
 }
 
-.nav-slider a:hover{
+.nav-slider a:hover {
   opacity: 1;
 }
+
 /* Responsive 1500px */
 @media (max-width:1500px){
 
@@ -477,4 +501,38 @@ header{
   .contact{
     font-size: 15px;
   }
+
+  .flex-map-img{
+    flex-direction:column;
+  }
+
+  .slider-wrapper {
+    position: relative;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  .slider img {
+    flex: 1 0 auto;
+    width:300px;
+    scroll-snap-align: right;
+    object-fit: cover;
+  }
+
+  .maps iframe{
+    height:401px;
+    width:300px;
+    border-radius:0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
 }
