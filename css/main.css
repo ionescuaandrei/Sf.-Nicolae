@@ -423,6 +423,11 @@ header{
 /* Responsive */
 
 @media (max-width:992px){
+  .header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .logo-img{
     width: 80px;
   }
