@@ -233,11 +233,22 @@ header{
   margin-bottom:20px;
 }
 
-
-
 .maps iframe{
-  height:666px;
-  width:500px;
+  height:443px;
+  width:960px;
+  border-radius:0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.fatade{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.fatade img{
+  width: 80%;
   border-radius:0.5rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -303,6 +314,7 @@ header{
   position: relative;
   display:flex;
   align-items:center;
+  flex-direction: column;
   justify-content:space-between;
   border-bottom: 1px solid #000;
 }
@@ -572,10 +584,15 @@ p.info-newsfeed{
   }
 
   .maps iframe{
-    height:401px;
-    width:300px;
+    height:200px;
+    width:350px;
     border-radius:0.5rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .fatade img{
+    width: 350px;
+    height: 180px;
   }
 
 }
