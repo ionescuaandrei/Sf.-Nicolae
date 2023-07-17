@@ -627,4 +627,8 @@ p.info-newsfeed{
     height: 180px;
   }
 
+  .comunicari-img img{
+    width: 350px;
+  }
+
 }
