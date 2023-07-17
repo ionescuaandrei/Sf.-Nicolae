@@ -302,7 +302,7 @@ header{
   text-decoration: underline;
 }
 .dropdown.open{
-  height: 250px;
+  height: 255px;
 }
 
 .dropdown li{
